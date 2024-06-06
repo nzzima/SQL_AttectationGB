@@ -6,29 +6,29 @@
 ### Ход выполнения 
 Сперва подключимся к БД lesson_4 и проверим в MySQL Workbench:
 
-![Screenshot](/source/img1.png)
+![Screenshot](/source/img1.png)   
 
 #### Задание 1
 Создадим таблицу users_old:
 
-![Screenshot](/source/img2.png)
+![Screenshot](/source/img2.png)   
 
 Создадим процедуру, с помощью которой можно переместить любого (одного) пользователя из таблицы users в таблицу users_old:
 
-![Screenshot](/source/img3.png)
-![Screenshot](/source/img3.1.png)
+![Screenshot](/source/img3.png)   
+![Screenshot](/source/img3.1.png)   
 
 Проверим выполнение вызвав процедуру:
 
-![Screenshot](/source/img4.png)
+![Screenshot](/source/img4.png)   
 
 Сначала убедимся, что из таблицы users был удален пользователь с id = 3:
 
-![Screenshot](/source/img5.png)
+![Screenshot](/source/img5.png)   
 
 Затем проверим, что в таблице users_old появился этот пользователь:
 
-![Screenshot](/source/img6.png)
+![Screenshot](/source/img6.png)   
 
 #### Задание 2
 Создаим хранимую функцию hello(), которая будет возвращать приветствие, 
@@ -36,41 +36,41 @@
 с 12:00 до 18:00 функция должна возвращать фразу "Добрый день", 
 с 18:00 до 00:00 — "Добрый вечер", с 00:00 до 6:00 — "Доброй ночи":
 
-![Screenshot](/source/img7.png)
-![Screenshot](/source/img8.png)
+![Screenshot](/source/img7.png)   
+![Screenshot](/source/img8.png)   
 
 Проверим выполнение, вызвав функцию (сначала NOW() для проверки времени, затем hello()):
 
-![Screenshot](/source/img9.png)
-![Screenshot](/source/img10.png)
+![Screenshot](/source/img9.png)    
+![Screenshot](/source/img10.png)   
 
 #### Задание 3
 Создадим таблицу logs типа Archive:
 
-![Screenshot](/source/img11.png)
+![Screenshot](/source/img11.png)   
 
 Напишем триггеры для соответствующих таблиц users, communities и messages, при срабатывании которых (при добавлении записи)
 в таблицу logs будет помещаться время и дата создания записи, название таблицы, идентификатор первичного ключа:
 
-![Screenshot](/source/img12.png)
+![Screenshot](/source/img12.png)   
 
 Проверим работоспособность:
 
 Триггер users_log:
 
-![Screenshot](/source/img13.png)
-![Screenshot](/source/img14.png)
-![Screenshot](/source/img15.png)
+![Screenshot](/source/img13.png)   
+![Screenshot](/source/img14.png)   
+![Screenshot](/source/img15.png)   
 
 Триггер communities_log:
 
-![Screenshot](/source/img16.png)
-![Screenshot](/source/img17.png)
-![Screenshot](/source/img18.png)
+![Screenshot](/source/img16.png)   
+![Screenshot](/source/img17.png)   
+![Screenshot](/source/img18.png)   
 
 Триггер messages_log:
 
-![Screenshot](/source/img19.png)
-![Screenshot](/source/img20.png)
-![Screenshot](/source/img21.png)
+![Screenshot](/source/img19.png)   
+![Screenshot](/source/img20.png)   
+![Screenshot](/source/img21.png)   
 
